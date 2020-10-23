@@ -7,7 +7,7 @@ export async function getStaticProps() {
   const posts = await fetcher("/api/user");
   return { props: { name } };
 }
-function Props(props) {
+function Profile(props) {
   // Here the `fetcher` function will be executed on the client-side.
   const { data } = useSWR("/api/user", fetcher, { initialData: props.name });
   // ...
@@ -19,3 +19,5 @@ function Props(props) {
     </Layout>
   );
 }
+
+export default Profile;
