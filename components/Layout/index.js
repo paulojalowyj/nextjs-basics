@@ -3,8 +3,8 @@ import styles from './layout.module.css'
 import utilStyles from '../../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Your Name'
-export const siteTitle = 'Next.js Sample Website'
+const name = 'Paulo Jalowyj'
+export const siteTitle = 'A Next.js Interactive Tutorial'
 
 export default function Layout({ children, home }) {
   return (
@@ -57,7 +57,7 @@ export default function Layout({ children, home }) {
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
-            <a>← Back to home</a>
+            <a>← Voltar</a>
           </Link>
         </div>
       )}
